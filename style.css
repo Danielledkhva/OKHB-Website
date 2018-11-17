@@ -1,0 +1,306 @@
+body {
+    background-color: #F1EFE2;
+    font-family: arial, helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header {
+    background-image: url(Images/IMG_1306.JPG);
+    background-size: cover;
+    display: flex;
+    grid-column: 1/4;
+}
+
+header img {
+    width: 13em;
+    margin: 0 0 0 5em;
+}
+
+nav {
+    margin-top: 2em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+}
+
+.dropdown_content{
+  display: none;
+  position: relative;
+  z-index: 1;
+  float: right;
+  width: 55em;
+    position: absolute;
+  top: 2em;
+  left: 30em;
+}
+
+.dropdown_content2 {
+  display: none;
+  position: relative;
+  z-index: 1;
+  float: right;
+  width: 55em;
+    position: absolute;
+  top: 4em;
+  left: 30em;
+}
+
+.dropdown_content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 15em;
+}
+
+.dropdown_content2 a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 15em;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+.dropdown{
+  display: block;
+
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dropdown:hover .dropdown_content2 {
+    display: block;
+}
+
+.dropdown_content > li{
+  float:left;
+/*    border-left: .125em solid white;*/
+}
+
+.dropdown_content2 > li{
+  float:left;
+/*    border-left: .125em solid white;*/
+}
+
+li .dropdown_content{
+  position: absolute;
+  float: right;
+}
+
+li .dropdown_content2{
+  position: absolute;
+  float: right;
+}
+
+article {
+    border: .25em solid #31A529;
+    margin: 5em 1em;
+    color: #575757;
+    padding: 1em;
+    min-width: 18em;
+    max-width: 25em;
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+article span {
+    position: absolute;
+    top: -1em;
+    background-color: #31A529;
+    color: #F1EFE2;
+    padding: .1em .5em;
+    margin: 0;
+}
+
+article p {
+    margin: 1em 0 2em 0;
+}
+
+article img {
+    width: 1em;
+}
+
+article a {
+    text-decoration: none;
+    color: #31A529;
+    position: absolute;
+    bottom: .5em;
+    right: 1em;
+}
+
+article a:hover {
+    color: #575757;
+}
+
+article li {
+    list-style-type: circle;
+    margin: 0 1em;
+    width: 22em;
+}
+
+/*
+article > button {
+    background-image: url(Images/zoolrgroen.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+article > button:hover {
+    background-image: url(Images/zoolrgrijs.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+*/
+
+form {
+    margin: 1em;
+}
+
+fieldset {
+    border: .25em solid #31A529;
+    width: 45em;
+}
+
+legend {
+    background-color: #31A529;
+    color: #F1EFE2;
+    font-weight: 900;
+}
+
+section h1 {
+    color: #575757;
+}
+
+section article img {
+    width: 2.75em;
+}
+
+footer {
+    background-color: #31A529;
+    color: #F1EFE2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 1/4;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer img {
+    width: 3em;
+    margin: .5em 0;
+}
+
+footer a{
+    color: #F1EFE2;
+}
+
+footer a:hover {
+    color: #575757;
+}
+
+footer #facebook {
+    width: 1em;
+}
+
+#smoelenboek span {
+    right: 3.5em;
+}
+
+#smoelenboek > article {
+    padding: 0;
+    width: 22em;
+/*    max-height: 11.5em;*/
+/*
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+*/
+}
+
+#smoelenboek > article > img {
+   width: 10em;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#smoelenboek > article > p {
+    font-size: .75em;
+    max-width: 15em;
+    padding: .5em .5em;
+    float: right;
+    position: relative;
+}
+
+#smoelenboek button {
+    border: none;
+    background-color: #F1EFE2;
+    color: #575757;
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}
+
+#smoelenboek button:hover {
+    text-decoration: underline;
+}
+
+.content {
+  overflow: hidden;
+  height: 10em;
+  line-height: 1.2em;
+}
+
+#watneemikmee article:nth-of-type(1) {
+    grid-area: main;
+}
+
+#watneemikmee article:nth-of-type(2) {
+    grid-area: download;
+}
+
+#watneemikmee article:nth-of-type(3) {
+    grid-area: tip;
+}
+
+#watneemikmee {
+    grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+      "header header"
+      "main download"
+      "main tip"
+}
