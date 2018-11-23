@@ -1,3 +1,24 @@
+/* CSS voor button */
+
+
+.content{
+    max-height:3em;
+    overflow:hidden;
+    transition: max-height .5s;
+    height: 10em;
+    line-height: 1.2em;
+}
+
+.test{
+    max-height:10em;
+    transition:.5s ease;
+}
+
+
+
+
+
+
 body {
     background-color: #F1EFE2;
     font-family: arial, helvetica, sans-serif;
@@ -278,11 +299,11 @@ footer #facebook {
     text-decoration: underline;
 }
 
-.content {
+/* .content {
   overflow: hidden;
   height: 10em;
   line-height: 1.2em;
-}
+} */
 
 #watneemikmee article:nth-of-type(1) {
     grid-area: main;
