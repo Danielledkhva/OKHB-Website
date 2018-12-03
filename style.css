@@ -14,11 +14,6 @@
     transition:.5s ease;
 }
 
-
-
-
-
-
 body {
     background-color: #F1EFE2;
     font-family: arial, helvetica, sans-serif;
@@ -181,6 +176,7 @@ article a {
 
 article a:hover {
     color: #575757;
+    background-color: #F1EFE2;
 }
 
 article li {
@@ -189,19 +185,24 @@ article li {
     width: 22em;
 }
 
-/*
-article > button {
+a > button {
     background-image: url(Images/zoolrgroen.png);
     background-size: contain;
     background-repeat: no-repeat;
+    width: 2em;
+    height: 3em;
+    border: none;
+    background-color: #F1EFE2;
+    margin-left: 1em;
 }
 
-article > button:hover {
+a > button:hover {
     background-image: url(Images/zoolrgrijs.png);
     background-size: contain;
     background-repeat: no-repeat;
+    width: 2em;
+    height: 3em;
 }
-*/
 
 form {
     margin: 1em;
@@ -235,14 +236,13 @@ footer {
     align-items: center;
     grid-column: 1/4;
     width: 100%;
-    position: fixed;
-    bottom: 0;
 }
 
 footer img {
-    width: 3em;
+    width: 2em;
     margin: .5em 0;
 }
+
 
 footer a{
     color: #F1EFE2;
@@ -253,7 +253,17 @@ footer a:hover {
 }
 
 footer #facebook {
-    width: 1em;
+    width: 2em;
+}
+
+footer #scoutingnl {
+    width: 3em;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+
 }
 
 #smoelenboek span {
@@ -263,12 +273,6 @@ footer #facebook {
 #smoelenboek > article {
     padding: 0;
     width: 22em;
-/*    max-height: 11.5em;*/
-/*
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-*/
 }
 
 #smoelenboek > article > img {
@@ -305,6 +309,19 @@ footer #facebook {
   line-height: 1.2em;
 } */
 
+#watneemikmee a > button {
+    background-image: url(Images/pdficon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 2em;
+}
+
+#watneemikmee a > button:hover {
+    background-image: url(Images/pdficon-grijs.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 #watneemikmee article:nth-of-type(1) {
     grid-area: main;
 }
@@ -324,4 +341,14 @@ footer #facebook {
       "header header"
       "main download"
       "main tip"
+}
+
+#waargaanwenaartoe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1fr;
+}
+
+#waargaanwenaartoe article:nth-of-type(2) {
+    height: 12em;
 }
